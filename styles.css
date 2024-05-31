@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --text-color: #FCEFF9;
+    --background-color: #25283D;
+    --accent-color: #66CC99;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Mukta", sans-serif;
+}
+
+.header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0 5rem;
+}
+
+.header--nav--list{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.hero-section--texts{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section--texts--title{
+    font-size: 3rem;
+}
+
+.hero-section--texts--subtitle{
+    font-size: 1.5rem;
+}
+
+.hero-section--texts--button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    width: 30%;
+}
