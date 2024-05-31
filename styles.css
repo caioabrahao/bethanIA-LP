@@ -6,6 +6,11 @@
     --accent-color: #66CC99;
 }
 
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -19,6 +24,7 @@
     align-items: center;
     justify-content: right;
     padding: 0 5rem;
+    background-color: var(--accent-color);
 }
 
 .header--nav--list{
@@ -36,6 +42,9 @@
     justify-content: space-around;
     align-items: center;
     height: 80vh;
+    /*border-radius: 20px 20px 50px 50px;*/
+    /*border: 0.5rem solid white;*/
+    scroll-snap-align: center;
 }
 
 .hero-section--texts{
@@ -69,6 +78,7 @@
     height: 80vh;
     align-items: center;
     justify-content: center;
+    scroll-snap-align: center;
 }
 
 .features-section--changing-text{
