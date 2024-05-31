@@ -61,3 +61,52 @@
     color: var(--background-color);
     width: 30%;
 }
+
+
+.features-section{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-section--changing-text{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.stationary-text{
+    font-weight: bold;
+}
+
+.features-section--cards{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem
+}
+
+.card-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: lightgray;
+    padding: 4rem 2rem;
+    text-align: center;
+    line-height: 2rem;
+
+    h2{
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1.2rem;
+        width: 60%;
+    }
+}
+
+.card-box img{
+    width: 40%;
+}
