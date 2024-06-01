@@ -1,122 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 :root{
-    --text-color: #FCEFF9;
-    --background-color: #25283D;
-    --accent-color: #66CC99;
-}
+    --text: #1d1603;
+    --background: #fefbf3;
+    --background-contrast: #DFDACD;
+    --primary: #f3cb53;
+    --secondary: #7cba78;
+    --accent: #074b33;
 
-html{
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+    --margin-size: 10rem;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Mukta", sans-serif;
+
+    font-family: 'Mukta', sans-serif;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--text);
 }
 
 .header{
-    height: 10vh;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: right;
-    padding: 0 5rem;
-    background-color: var(--accent-color);
+    justify-content: space-between;
+    background: var(--secondary);
+    border: 25px solid var(--background);
+    border-radius: 5rem 5rem 0 0;
+    border-bottom: 0;
+    height: 10vh;
+    padding: 4rem var(--margin-size);
+}
+
+.header--logo{
+    width: 15rem;
+    height: auto;
+}
+
+.header--nav{
+
 }
 
 .header--nav--list{
+    list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
-    list-style: none;
+    gap: 10rem;
+    font-size: 1.2rem;
 }
 
 .hero-section{
+    /*background-color: var(--secondary);*/
+    background-image:
+            url("./images/old-couple-using-cellphone.png"),
+            radial-gradient(circle at 70% 100% ,#DBF5DA , var(--secondary) 60%);
+    background-repeat: no-repeat;
+    background-size: 55%, 100%;
+    background-position: 90% bottom, center;
+    height: 80vh;
+    border-radius: 0 0 8rem 8rem;
+    border: 25px solid var(--background);
+    border-top: 0;
+    border-bottom: 0;
+    padding: 0 var(--margin-size);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-section .body-content{
     display: flex;
     flex-direction: row;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    justify-content: space-around;
     align-items: center;
-    height: 80vh;
-    /*border-radius: 20px 20px 50px 50px;*/
-    /*border: 0.5rem solid white;*/
-    scroll-snap-align: center;
+}
+
+.hero-section--image{
+    position: relative;
+    width: auto;
+    height: 50%;
 }
 
 .hero-section--texts{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .hero-section--texts--title{
-    font-size: 3rem;
+    font-size: 5rem;
+    width: 60%;
+    line-height: 110%;
 }
 
 .hero-section--texts--subtitle{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .hero-section--texts--button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 1.3rem;
     text-decoration: none;
-    background-color: var(--accent-color);
-    color: var(--background-color);
-    width: 30%;
+    color: var(--text);
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: var(--primary);
+    padding: 1rem 3rem;
+    border-radius: 15px;
+    width: fit-content;
 }
 
 
+
 .features-section{
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
-    height: 80vh;
     align-items: center;
     justify-content: center;
-    scroll-snap-align: center;
+    padding: 0 var(--margin-size);
+    height: 90vh;
 }
 
 .features-section--changing-text{
     display: flex;
     flex-direction: row;
-    gap: 0.5em;
-}
-
-.stationary-text{
-    font-weight: bold;
+    gap: .5rem;
+    font-size: 3rem;
 }
 
 .features-section--cards{
     display: flex;
     flex-direction: row;
-    gap: 10rem
+    /*justify-content: space-between;*/
+    gap: 5%;
 }
 
 .card-box{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    background-color: lightgray;
-    padding: 4rem 2rem;
+    justify-content: center;
+    background-color: var(--background-contrast);
     text-align: center;
-    line-height: 2rem;
+    padding: 7rem 1rem;
+    line-height: 180%;
+    gap: 2rem;
+    border-radius: 30px;
+    width: fit-content;
 
     h2{
-        font-size: 1.8rem;
+        font-size: 3rem;
+        line-height: 110%;
     }
     p{
-        font-size: 1.2rem;
-        width: 60%;
+        font-size: 2rem;
+        width: 80%;
     }
 }
 
 .card-box img{
     width: 40%;
+    height: auto;
 }
+
+
