@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
     --text: #1d1603;
@@ -9,6 +9,18 @@
     --accent: #074b33;
 
     --margin-size: 10rem;
+
+    --header1: 5.61rem;
+    --header2: 4.209rem;
+    --header3: 3.157rem;
+    --header4: 2.369rem;
+    --header5: 1.777rem;
+    --header6: 1.333rem;
+    --paragraph: 1rem;
+    --small: 0.75rem;
+    
+    --header-font: 'Poppins', sans-serif;
+    --body-font: 'Montserrat', sans-serif;
 }
 
 *{
@@ -16,7 +28,7 @@
     margin: 0;
     padding: 0;
 
-    font-family: 'Mukta', sans-serif;
+    font-family: 'montserrat', sans-serif;
 }
 
 body{
@@ -30,9 +42,11 @@ body{
     align-items: center;
     justify-content: space-between;
     background: var(--secondary);
+
     border: 25px solid var(--background);
     border-radius: 5rem 5rem 0 0;
     border-bottom: 0;
+
     height: 10vh;
     padding: 4rem var(--margin-size);
 }
@@ -55,13 +69,13 @@ body{
 }
 
 .hero-section{
-    /*background-color: var(--secondary);*/
     background-image:
             url("./images/old-couple-using-cellphone.png"),
             radial-gradient(circle at 70% 100% ,#DBF5DA , var(--secondary) 60%);
     background-repeat: no-repeat;
     background-size: 55%, 100%;
     background-position: 90% bottom, center;
+
     height: 80vh;
     border-radius: 0 0 8rem 8rem;
     border: 25px solid var(--background);
@@ -93,13 +107,14 @@ body{
 }
 
 .hero-section--texts--title{
-    font-size: 5rem;
+    font-family: var(--header-font), sans-serif;
+    font-size: var(--header1);
     width: 60%;
     line-height: 110%;
 }
 
 .hero-section--texts--subtitle{
-    font-size: 2rem;
+    font-size: var(--header5);
 }
 
 .hero-section--texts--button{
@@ -120,7 +135,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 0 var(--margin-size);
     height: 90vh;
 }
@@ -129,7 +144,7 @@ body{
     display: flex;
     flex-direction: row;
     gap: .5rem;
-    font-size: 3rem;
+    font-size: var(--header4);
 }
 
 .features-section--cards{
@@ -146,25 +161,45 @@ body{
     justify-content: center;
     background-color: var(--background-contrast);
     text-align: center;
-    padding: 7rem 1rem;
+    padding: 6rem 1rem;
     line-height: 180%;
     gap: 2rem;
     border-radius: 30px;
     width: fit-content;
 
     h2{
-        font-size: 3rem;
+        font-family: var(--header-font), sans-serif;
+        font-size: var(--header4);
         line-height: 110%;
     }
     p{
-        font-size: 2rem;
+        font-size: var(--header6);
         width: 80%;
     }
 }
 
 .card-box img{
-    width: 40%;
+    width: 30%;
     height: auto;
+}
+
+.dash-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: var(--accent);
+    height: 90vh;
+}
+
+
+.footer{
+    background-color: #063C29;
+    color: var(--background);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
 }
 
 
