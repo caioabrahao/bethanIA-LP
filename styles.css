@@ -233,9 +233,9 @@ body{
     align-items: center;
     justify-content: center;
     background-color: var(--accent);
-    height: 80vh;
+    height: fit-content;
 
-    padding: 0 var(--margin-size);
+    padding: 10vh var(--margin-size);
 
     scroll-snap-align: center;
 }
@@ -246,28 +246,68 @@ body{
     grid-template-rows: 1fr 1fr;
 
     gap: 1.5rem;
-
-    height: 60%;
 }
 
 .dash-card{
     background-color: var(--background);
     border-radius: 15px;
     padding: 3rem;
+
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    h2{
+        font-family: var(--header-font), sans-serif;
+        font-size: var(--header4);
+        font-weight: 700;
+    }
+    p{
+        font-size: var(--header6);
+    }
 }
 
 .card-1{
     grid-column: 1 / 1;
     grid-row: 1;
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
     background-color: #7CBA78;
+
+    .text{
+        width: 50%;
+    }
+    img{
+        width: 40%;
+        height: auto;
+    }
 }
 
 .card-2{
     grid-column: 1;
     grid-row: 2;
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
     background-color: #FFCC7E;
+
+    .text{
+        width: 50%;
+        text-align: right;
+    }
+    img{
+        width: 50%;
+        height: auto;
+    }
 }
 
 .card-3{
@@ -275,6 +315,18 @@ body{
     grid-row: 1 / span 2;
 
     background-color: #FBDF8A;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .text{
+        text-align: center;
+    }
+    img{
+
+    }
 }
 
 .wave-divider{
