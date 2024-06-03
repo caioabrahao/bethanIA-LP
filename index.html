@@ -8,20 +8,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <img class="header--logo" src="./images/logos/bethania-logo-typography.svg" alt="bethania AI logo">
-        <nav class="header--nav">
-            <ul class="header--nav--list">
-                <li>SOBRE</li>
-                <li>FUNCIONALIDADES</li>
-                <li>DÚVIDAS</li>
-            </ul>
-        </nav>
-    </header>
+<!--    <header class="header">-->
+<!--        <img class="header&#45;&#45;logo" src="./images/logos/bethania-logo-typography.svg" alt="bethania AI logo">-->
+<!--        <nav class="header&#45;&#45;nav">-->
+<!--            <ul class="header&#45;&#45;nav&#45;&#45;list">-->
+<!--                <li>SOBRE</li>-->
+<!--                <li>FUNCIONALIDADES</li>-->
+<!--                <li>DÚVIDAS</li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--    </header>-->
 
     <main>
         <section class="hero-section">
-
+            <div class="header">
+                <img class="header--logo" src="./images/logos/bethania-logo-typography.svg" alt="bethania AI logo">
+                <nav class="header--nav">
+                    <ul class="header--nav--list">
+                        <li><a class="anchor-text" href="#">SOBRE</a></li>
+                        <li><a class="anchor-text" href="#">FEATURES</a></li>
+                        <li><a class="anchor-text" href="#">DÚVIDAS</a></li>
+                        <li><a class="anchor-text" href="#">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
 
             <div class="body-content">
                 <div class="hero-section--texts">
@@ -37,7 +47,7 @@
         <section class="features-section">
             <div class="features-section--changing-text">
                 <h2 class="stationary-text">BETHANIA,</h2>
-                <h2 class="changing-text" id="changing-text">Ligue para minha filha.</h2>
+                <h2 class="changing-text--placeholder" id="changing-text">Ligue para minha filha.</h2>
             </div>
 
             <div class="features-section--cards">
@@ -59,16 +69,38 @@
             </div>
 
             <a class="hero-section--texts--button" href="#">FUNCIONALIDADES</a>
+
         </section>
 
+        <div class="wave-divider"><img src="./images/waves.svg" alt="wave-divider"></div>
         <section class="dash-section">
+            <div class="dash-grid">
+                <div class="dash-card card-1">
+                    <h2>TENHA UMA VIDA MAIS ATIVA</h2>
+                    <p>BethanIA incentiva uma vida mais ativa e saudável com base nos seus gostos!</p>
+                </div>
+                <div class="dash-card card-2">
+                    <h2>TENHA UMA VIDA MAIS ATIVA</h2>
+                    <p>BethanIA incentiva uma vida mais ativa e saudável com base nos seus gostos!</p>
+                </div>
+                <div class="dash-card card-3">
+                    <h2>TENHA UMA VIDA MAIS ATIVA</h2>
+                    <p>BethanIA incentiva uma vida mais ativa e saudável com base nos seus gostos!</p>
+                </div>
+            </div>
 
         </section>
 
     </main>
 
     <footer class="footer">
-        <p>bethanIA is a work-in-progress project by Caio Abrahão and Lorine Fonseca</p>
+        <ul class="footer--list">
+            <li><a class="anchor-text" href="#">SOBRE</a></li>
+            <li><a class="anchor-text" href="#">FEATURES</a></li>
+            <li><a class="anchor-text" href="#"><img src="./images/logos/bethania-logo-icon-light.svg" alt="bethania logo"></a></li>
+            <li><a class="anchor-text" href="#">DÚVIDAS</a></li>
+            <li><a class="anchor-text" href="#">CONTATO</a></li>
+        </ul>
     </footer>
 </body>
 </html>
