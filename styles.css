@@ -7,7 +7,6 @@
     --primary: #f3cb53;
     --secondary: #7cba78;
     --accent: #074b33;
-
     --margin-size: 10rem;
 
     --header1: 5.61rem;
@@ -84,7 +83,7 @@ body{
 
 .hero-section{
     background-image:
-            url("./images/old-couple-using-cellphone.png"),
+            url("images/photos/old-couple-using-cellphone.png"),
             radial-gradient(circle at 75% 100% ,#DBF5DA , var(--secondary) 60%);
     background-repeat: no-repeat;
     background-size: 55%, 100%;
@@ -346,7 +345,7 @@ body{
     padding: 0 var(--margin-size);
 }
 
-.footer--list{
+.footer--list {
     list-style: none;
 
     display: flex;
@@ -354,15 +353,49 @@ body{
     gap: 10%;
     align-items: center;
     justify-content: center;
-
-    width: 100%;
-
-    font-weight: 500;
-    font-size: var(--paragraph);
-
-    img{
-        width: var(--header4);
-    }
 }
 
 
+
+
+.about-header{
+    padding: 5rem var(--margin-size);
+}
+
+.about-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 0 var(--margin-size);
+}
+
+.about-hero--content{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.about-hero--image{
+    width: 100%;
+}
+
+.about-hero--text {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    h2 {
+        font-size: var(--header2);
+        font-family: var(--header-font), sans-serif;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: var(--header6);
+    }
+}
