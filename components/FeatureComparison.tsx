@@ -1,5 +1,6 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Check, X } from "lucide-react"
+import Image from 'next/image';
 
 const features = [
     { name: "Interação por Voz", bethanIA: true, elliQ: true },
